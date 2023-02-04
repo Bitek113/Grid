@@ -12,11 +12,22 @@
 
 <body>
   <div id="container">
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+
+    </div>
     <header class="description">
       <div class="description_wrapper">
         <div class="logo">
           <img class="logo_img" src="img/logo.svg" alt="amg">
           <h2 class="logo_text">PHANTOM</h2>
+
+
+
+          <!-- <button class="light-mode"> <i class="ri-sun-line"></i></button> -->
         </div>
         <h1>This is Phantom, a free, fully responsive site
           template designed by <a class="link_style" href="https://html5up.net/">HTML5 UP</a>.</h1>
@@ -62,7 +73,7 @@
           </div>
           <textarea name="message" id="message" placeholder="Message" rows="2"
             style="overflow: hidden; width: 80%; height: 69px;"></textarea></br>
-          <button class="pre_footer_btn">SEND</button>
+          <button class="pre_footer_btn mode">SEND</button>
           <p class="footer_text">© Untitled. All rights reserved | Design: <a class="link_style"
               href="https://html5up.net/">HTML5 UP</a> | Demo Images: <a class="link_style"
               href="https://unsplash.com/">Unsplash</a> </p>
@@ -83,8 +94,52 @@
           </div>
         </div>
       </div>
+
+
     </section>
+
+    <div class="cookie-wrapper">
+      <div class="cookie">
+        <img src="img/Cookie.png" alt="" style="height: 50px; width: 50px; float:left">
+        <h4 style="margin-left:55px; margin-top: 14px; font-size: 1.2rem;">Cookie Consent</h4>
+        <p>Our website uses cookies to provide your browsing experience and relavent informations.Before continuing to
+          use our website, you agree & accept of our <a href="#">Cookie Policy & Privacy</a></p>
+        <button id="acceptCookie">Accept</button>
+      </div>
+    </div>
+
+    <div class="gallery">
+
+    <img class="myImg" src="img/pic02.jpg" alt="Water" style="width:100%;max-width:300px">
+    <img class="myImg" src="img/pic03.jpg" alt="Metro" style="width:100%;max-width:300px">
+    <img class="myImg" src="img/pic04.jpg" alt="Dude" style="width:100%;max-width:300px">
+    <img class="myImg" src="img/pic05.jpg" alt="Snow" style="width:100%;max-width:300px">
+    <img class="myImg" src="img/pic06.jpg" alt="Mountain" style="width:100%;max-width:300px">
+    <img class="myImg" src="img/pic07.jpg" alt="Desk" style="width:100%;max-width:300px">
+    <img class="myImg" src="img/pic08.jpg" alt="City" style="width:100%;max-width:300px">
+    <img class="myImg" src="img/pic09.jpg" alt="Mountains" style="width:100%;max-width:300px">
+    <img class="myImg" src="img/pic10.jpg" alt="Field" style="width:100%;max-width:300px">
   </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+
+
+    </div>
+
+  </div>
+
+  <script src="dark_mode.js"></script>
+  <script src="gallery.js"></script>
 </body>
 
 </html>
